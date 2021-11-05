@@ -1,6 +1,6 @@
 news_sites:
   eluniversal:
-    url: https://www.xataka.com.mx
+    url: www.xataka.com.mx
     queries:
       homepage_article_links: '.base-asset-image a'
       article_body: '.field-name-body'
