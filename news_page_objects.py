@@ -6,9 +6,9 @@ from common import config
 class NewsPage:
 	
    def __init__(self, news_site_uid, url):
-      self.config= config()['news_sites'][news_site_uid]
-      self.queries = self.config['queries']
-      self.html=None
+      self._config= config()['news_sites'][news_site_uid]
+      self._queries = self._config['queries']
+      self._html=None
 	   
       self._visit(url)
 
@@ -43,7 +43,7 @@ class ArticlePage(NewsPage):
 
    @property
    def body(self):
-      result=self.select(self._queries['article_body'])
+      result=self._select(self._queries['article_body'])
       return result[0].text if len(result) else ''
 
    @property

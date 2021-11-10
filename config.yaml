@@ -3,8 +3,8 @@ news_sites:
     url: https://www.xataka.com.mx
     queries:
       homepage_article_links: '.base-asset-image a'
-      article_body: '.field-name-body'
-      article_title: '.Encabezado-Articulo h1'
+      article_body: '.article-content'
+      article_title: '.article-header header h1 span'
   elpais:
    url: https://elpais.com
    queries:
